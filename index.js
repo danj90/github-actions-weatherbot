@@ -22,7 +22,7 @@ const getWeatherData = async () => {
 const generateWeatherMessage = 
     weatherData => `Hi there! The Weather in ${weatherData.name}: ${weatherData.weather[0].description}. 
     Current temperature is ${weatherData.main.temp}, with a low temp of ${weatherData.main.temp_min}
-     and a high of ${weatherData.temp_max}.`
+     and a high of ${weatherData.main.temp_max}.`
 
 const main  = async () => {
     const weatherData = await getWeatherData()
