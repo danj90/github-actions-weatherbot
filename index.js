@@ -6,6 +6,8 @@ const weatherToken = process.env.WEATHER_API_TOKEN
 
 const weatherURL = new URL('https://api.openweathermap.org/data/2.5/weather')
 //?zip=94040,us
+//rest tester line below:
+//GET https://api.openweathermap.org/data/2.5/weather?zip=92129,us&APPID=91673733eee1695a0331c4905e06b598&units=imperial
 
 weatherURL.searchParams.set('zip', '92129,us')
 weatherURL.searchParams.set('APPID', weatherToken)
@@ -33,3 +35,4 @@ const main  = async () => {
 
 main()
 
+//to run this- at command line, run node index.js 

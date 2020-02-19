@@ -1,0 +1,6 @@
+//test api here
+
+//rest tester line below:
+
+GET https://api.openweathermap.org/data/2.5/weather?zip=92129,us&APPID=91673733eee1695a0331c4905e06b598&units=imperial
+
